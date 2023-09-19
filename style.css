@@ -5,4 +5,13 @@
 .title {
     text-align: center;
     color: gray;
+    font-size: x-large;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    margin: 10px 0px;
 }
