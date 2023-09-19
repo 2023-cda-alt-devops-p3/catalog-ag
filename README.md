@@ -12,7 +12,7 @@ Diagrammes UML de structure
 - Diagrammes de Paquetages
 - Diagramme de profil
 
-Diagrammes UML de structure
+Diagrammes UML de comportement
 
 - Diagrammes de Cas d’Utilisation
 - Diagrammes d’Activité
