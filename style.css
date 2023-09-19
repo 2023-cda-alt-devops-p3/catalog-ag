@@ -4,5 +4,64 @@
 
 .title {
     text-align: center;
-    color: gray;
+    color: green;
+    font-size: xx-large;
+}
+
+.nav {
+    border: 4px solid green;
+    max-width: max-content;
+    max-height: min-content;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    border: 4px solid green;
+    margin-left: 20px;
+}
+
+.article {
+    margin: 0px 10px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    margin: 10px 5px 10px 0px;
+}
+
+
+h2 {
+    font-size: x-large;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+p {
+    font-size: larger;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+li {
+    font-size: large;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.img-article {
+    display: flex;
+    justify-content: center;
 }

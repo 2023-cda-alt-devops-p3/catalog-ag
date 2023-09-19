@@ -1,46 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Doc-UML-MERISE</title>
 </head>
+
 <body>
     <main class="main">
-    <header class="header">
-        <h1 class="title">Documentation UML MERISE</h1>
-    </header>
-    <nav class="nav">
 
-        <p>Diagrammes de structure</p>
-        <a>Diagrammes de classes</a>
-        <a>Diagrammes d'Objets</a>
-        <a>Diagrammes de Composants</a>
-        <a>Diagrammes de Structure Composites</a>
-        <a>Diagrammes de Déploiement</a>
-        <a>Diagrammes de Paquetage</a>
-        <a>Diagrammes de profil</a>
+        <header class="header">
+            <h1 class="title">Documentation UML MERISE</h1>
+        </header>
 
-        <p>Diagrammes de comportement</p>
-        <a>Diagrammes de Cas d'Utilisation</a>
-        <a>Diagrammes d'Activité</a>
-        <a>Diagrammes des états-transitions</a>
-        <a>Diagrammes de Communication</a>
-        <a>Diagrammes de Séquence</a>
-        <a>Diagrammes de Temps</a>
-        <a>Diagrammes de Vue d'Ensemble d'Interaction</a>
+        <div class="page">
+            <nav class="nav">
 
-        <p>Diagrammes MERISE</p>
-        <a>MCD modèle conceptuel des données</a>
-        <a>MCT modèle conceptuel des traitements</a>
-        <a>MLD modèle logique des données</a>
-        <a>MPD modèle physique des données</a>
-        <a>DFD modèle de flux de données</a>
-        <a>PFD modèle de flux de processus</a> 
-        <a>EFD modèle de flux externe</a> 
-        <a>EA modèle entité-association</a> 
-    </nav>
+                <h2>Navigation</h2>
+
+                <p>Diagrammes UML de structure</p>
+                <ol>
+                    <li><a href="#diagramme-de-classes-UML">Diagrammes de classes</a></li>
+                    <li><a href="#diagramme-d-objets-UML">Diagrammes d'Objets</a></li>
+                    <li><a>Diagrammes de Composants</a></li>
+                    <li><a>Diagrammes de Structure Composites</a></li>
+                    <li><a>Diagrammes de Déploiement</a></li>
+                    <li><a>Diagrammes de Paquetage</a></li>
+                    <li><a>Diagrammes de profil</a></li>
+                </ol>
+
+                <p>Diagrammes UML de comportement</p>
+                <ol>
+                    <li><a>Diagrammes de Cas d'Utilisation</a></li>
+                    <li><a>Diagrammes d'Activité</a></li>
+                    <li><a>Diagrammes des états-transitions</a></li>
+                    <li><a>Diagrammes de Communication</a></li>
+                    <li><a>Diagrammes de Séquence</a></li>
+                    <li><a>Diagrammes de Temps</a></li>
+                    <li><a>Diagrammes de Vue d'Ensemble d'Interaction</a></li>
+                </ol>
+
+                <p>Diagrammes MERISE</p>
+                <ol>
+                    <li><a>MCD modèle conceptuel des données</a></li>
+                    <li><a>MCT modèle conceptuel des traitements</a></li>
+                    <li><a>MLD modèle logique des données</a></li>
+                    <li><a>MPD modèle physique des données</a></li>
+                    <li><a>DFD modèle de flux de données</a></li>
+                    <li><a>PFD modèle de flux de processus</a></li>
+                    <li><a>EFD modèle de flux externe</a></li>
+                    <li><a>EA modèle entité-association</a></li>
+                </ol>
+
+            </nav>
+
+            <section class="section">
+
+                <article class="article" id="diagramme-de-classes-UML">
+                    <p>Diagramme de classe UML</p>
+                    <p>Les diagrammes de classes sont l'un des types de diagrammes UML les plus utiles, car ils
+                        décrivent clairement la structure d'un système particulier en modélisant ses classes, ses
+                        attributs, ses opérations et les relations entre ses objets.</p>
+                    <p>Le langage de modélisation unifié (UML) peut vous aider à modéliser des systèmes de plusieurs
+                        façons. Le diagramme de classes est l'un des types les plus populaires en langage UML. Très
+                        utilisé par les ingénieurs logiciel pour documenter l'architecture des logiciels, les diagrammes
+                        de classes sont un type de diagramme de structure, car ils décrivent ce qui doit être présent
+                        dans le système modélisé.</p>
+                    <p>Le langage UML a été créé sous forme de modèle standardisé pour décrire une approche de la
+                        programmation orientée objet. Comme les classes sont les composantes des objets, les diagrammes
+                        de classes sont les composantes de l'UML. Les divers éléments d'un diagramme de classes peuvent
+                        représenter les classes qui seront effectivement programmées, les principaux objets ou les
+                        interactions entre classes et objets. </p>
+                    <p>La forme de la classe à proprement parler se compose d'un rectangle à trois lignes. La ligne
+                        supérieure contient le nom de la classe, celle du milieu affiche les attributs de la classe et
+                        la ligne inférieure exprime les méthodes ou les opérations que la classe est susceptible
+                        d'utiliser. Les classes et sous-classes sont regroupées pour illustrer la relation statique
+                        entre chaque objet.</p>
+                    <p>Toutes les classes ont des niveaux d'accès différents, en fonction du modificateur d'accès
+                        (indicateur de visibilité). Voici les niveaux d'accès existants et les symboles qui leur sont
+                        associés :</p>
+                    <ol>
+                        <li>Public (+)</li>
+                        <li>Privé (-)</li>
+                        <li>Protégé (#)</li>
+                        <li>Paquetage (~)</li>
+                        <li>Dérivé (/)</li>
+                        <li>Statique (souligné)</li>
+                    </ol>
+                    <p>Il existe deux portées pour les membres : les classifieurs et les instances. Les classifieurs
+                        sont des membres statiques alors que les instances sont des instances spécifiques de la classe.
+                    </p>
+                    <p>Selon le contexte, les classes d'un diagramme de classes peuvent représenter les principaux
+                        objets,
+                        les interactions dans l'application ou les classes à programmer. Pour répondre à la question «
+                        Qu'est-ce qu'un diagramme de classes UML ? », il vous faut d'abord comprendre sa structure de
+                        base.</p>
+
+                    <li>Classes : modèle pour créer des objets et mettre en œuvre un comportement dans un système. En
+                        langage UML, une classe représente un objet ou un ensemble d'objets possédant une structure et
+                        un comportement communs. On les représente par un rectangle comprenant des lignes pour le nom de
+                        la classe, ses attributs et ses opérations. Lorsque vous dessinez une classe dans un diagramme
+                        de classes, seule la ligne supérieure est obligatoire, les autres sont facultatives et ne
+                        servent qu'à fournir des détails supplémentaires.</li>
+                    <ol>
+                        <li>Nom : première ligne d'une forme de classe.</li>
+                        <li>Attributs : deuxième ligne d'une forme de classe. Chaque attribut de la classe apparaît sur
+                            une ligne distincte.</li>
+                        <li>Méthodes : troisième ligne d'une forme de classe. On les appelle aussi opérations ; elles
+                            apparaissent sous forme de liste, chaque opération occupant une ligne différente.</li>
+                    </ol>
+                    <li>Signaux : symboles qui représentent les communications à sens unique et asynchrones entre des
+                        objets actifs.</li>
+                    <li>Types de données : classifieurs qui définissent des valeurs de données. Les types de données
+                        peuvent modéliser les types primitifs et les énumérations.</li>
+                    <li>Paquetages : formes conçues pour organiser les classifieurs connexes d'un diagramme. On les
+                        symbolise par une grande forme rectangulaire à onglets.</li>
+                    <li>Interfaces : groupe de signatures d'opération et/ou de définitions d'attributs définissant un
+                        ensemble cohérent de comportements. Les interfaces sont semblables à des classes, sauf qu'une
+                        classe peut avoir une instance de son type et qu'une interface doit compter au moins une classe
+                        pour la mettre en œuvre.</li>
+                    <li>Énumérations : représentations de types de données définis par l'utilisateur. Une énumération
+                        comprend des groupes d'identificateurs qui représentent des valeurs de l'énumération.</li>
+                    <li>Objets : instances d'une ou plusieurs classes. On peut ajouter des objets à un diagramme de
+                        classes pour représenter des instances concrètes ou prototypiques.</li>
+                    <li>Artefacts : éléments du modèle qui représentent les entités concrètes d'un système logiciel,
+                        tels que des documents, des bases de données, des fichiers exécutables, des composants
+                        logiciels, etc.</li>
+                    <div class="img-article">
+                        <img src="img/UML-Classes.png" alt="exemple de diagramme de classe UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-d-objets-UML">
+                    <p>Diagramme d'objets UML</p>
+                    <p>Un diagramme d'objets UML représente une instance spécifique d'un diagramme de classes à un
+                        moment précis. Dans sa représentation visuelle, il est très similaire à un diagramme de classes.
+                    </p>
+                    <p>Les diagrammes d'objets sont simples à créer : ils sont composés d'objets, représentés par des
+                        rectangles et reliés par des lignes. Voici les principaux éléments d'un diagramme d'objets.</p>
+                    <p>Le langage UML a été créé sous forme de modèle standardisé pour décrire une approche de la
+                        programmation orientée objet. Comme les classes sont les composantes des objets, les diagrammes
+                        de classes sont les composantes de l'UML. Les divers éléments d'un diagramme de classes peuvent
+                        représenter les classes qui seront effectivement programmées, les principaux objets ou les
+                        interactions entre classes et objets. </p>
+                    <ol>
+                        <li>Objets Les objets désignent les instances d'une classe. Par exemple, si « voiture » est une
+                            classe, « Nissan Altima 2007 » est un objet de cette classe.</li>
+                        <li>Titres de classe Les titres de classes sont les attributs spécifiques d'une classe donnée.
+                            Dans le diagramme
+                            d'objets arbre généalogique, ce sont le nom, le sexe et l'âge des membres de la famille. Ils
+                            peuvent apparaître en tant qu'éléments sur l'objet, voire dans les propriétés de l'objet
+                            même (par exemple la couleur).</li>
+                        <li>Attributs de classe Les attributs de classe sont représentés par un rectangle avec deux
+                            onglets qui indique un élément de logiciel.</li>
+                        <li>Liens Les liens correspondent aux lignes qui relient deux formes d'un diagramme d'objets.
+                        </li>
+                    </ol>
+                    <div class="img-article">
+                        <img src="img/UML-objets-1.png" alt="exemple de diagramme d'objets UML" />
+                    </div>
+                    <div class="img-article">
+                        <img src="img/UML-objets-2.png" alt="exemple de diagramme d'objets UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-de-composants-UML">
+                    <p>Un diagramme de composants a pour objectif d'illustrer la relation entre les différents
+                        composants d'un système. Dans le cadre de l'UML 2.0, le terme « composant » fait référence à un
+                        module de classes qui représentent des systèmes ou des sous-systèmes indépendants ayant la
+                        capacité de s'interfacer avec le reste du système.</p>
+                    <p>Il existe une approche de développement entièrement articulée autour des composants: la
+                        programmation orientée composant (POC). Dans cette approche, les diagrammes de composants
+                        permettent au responsable de la planification d'identifier les différents composants afin que
+                        l'ensemble du système fonctionne selon le cahier des charges.</p>
+                    <p>Plus communément, dans une approche de programmation orientée objet, le diagramme de composants
+                        permet à un développeur senior de regrouper des classes autour d'un objectif commun afin que les
+                        parties prenantes et lui-même puissent disposer d'une vue d'ensemble sur un projet de
+                        développement logiciel.</p>
+                    <p>Bien que les diagrammes des composants puissent paraître complexes à première vue, ils sont d'une
+                        valeur inestimable pour la conception de votre système. Ils peuvent en effet aider votre équipe
+                        à :</p>
+                    <ol>
+                        <li>imaginer la structure physique du système ;</li>
+                        <li>faire ressortir les composants du système et à leurs relations ;</li>
+                        <li>mettre en évidence le comportement de chaque service vis-à-vis de l'interface.</li>
+                    </ol>
+                    <p>Un diagramme de composants UML vous permet d'obtenir une vue d'ensemble de votre système
+                        logiciel. Comprendre le comportement précis du service fourni par chaque élément de votre
+                        logiciel vous aidera à devenir un meilleur développeur. Les diagrammes de composants peuvent
+                        représenter tout type de systèmes logiciels, quel que soit le langage ou style de programmation
+                        utilisé.</p>
+                    <p>L'UML est un ensemble de conventions pour les diagrammes orientés objets avec un grand nombre
+                        d'applications possibles. Dans les diagrammes de composants, le langage de modélisation unifié
+                        (UML) prévoit que les composants et les packages (ou paquetages, en français) soient reliés les
+                        uns aux autres par des lignes représentant les connecteurs d'assemblage et les connecteurs de
+                        délégation.</p>
+                </article>
+
+            </section>
+        </div>
     </main>
 </body>
+
 </html>
