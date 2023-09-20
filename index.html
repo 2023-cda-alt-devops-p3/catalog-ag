@@ -40,7 +40,7 @@
                     <li><a href="#diagramme-etats-transitions-UML">Diagrammes des états-transitions</a></li>
                     <li><a href="#diagramme-de-communication-UML">Diagrammes de Communication</a></li>
                     <li><a href="#diagramme-de-sequence-UML">Diagrammes de Séquence</a></li>
-                    <li><a>Diagrammes de Temps</a></li>
+                    <li><a href="#diagramme-de-temps-UML">Diagrammes de Temps</a></li>
                     <li><a>Diagrammes de Vue d'Ensemble d'Interaction</a></li>
                 </ol>
 
@@ -643,20 +643,40 @@
                     </ol>
                     <p>Les scénarios suivants sont idéaux pour utiliser un diagramme de séquence :</p>
                     <ol>
-                        <li>Scénario d'utilisation : un scénario d'utilisation est un diagramme décrivant comment votre système pourrait potentiellement être utilisé. C'est un bon moyen de s'assurer que vous avez pris en compte la logique de tous les scénarios d'utilisation du système.</li>
-                        <li>Logique de méthode : de la même façon que vous pouvez utiliser un diagramme de séquence UML pour analyser la logique d'un cas d'utilisation, vous pouvez aussi vous en servir pour analyser la logique d'une fonction, d'une procédure ou d'un processus complexe.</li>
-                        <li>Logique de service : si vous considérez un service comme étant une méthode générale utilisée par différents clients, un diagramme de séquence est le moyen idéal de le schématiser.
+                        <li>Scénario d'utilisation : un scénario d'utilisation est un diagramme décrivant comment votre
+                            système pourrait potentiellement être utilisé. C'est un bon moyen de s'assurer que vous avez
+                            pris en compte la logique de tous les scénarios d'utilisation du système.</li>
+                        <li>Logique de méthode : de la même façon que vous pouvez utiliser un diagramme de séquence UML
+                            pour analyser la logique d'un cas d'utilisation, vous pouvez aussi vous en servir pour
+                            analyser la logique d'une fonction, d'une procédure ou d'un processus complexe.</li>
+                        <li>Logique de service : si vous considérez un service comme étant une méthode générale utilisée
+                            par différents clients, un diagramme de séquence est le moyen idéal de le schématiser.
                         </li>
                     </ol>
                     <div class="img-article">
-                        <img src="img/UML-sequence-1.png"
-                            alt="exemple de diagramme de séquence UML" />
+                        <img src="img/UML-sequence-1.png" alt="exemple de diagramme de séquence UML" />
                     </div>
                     <div class="img-article">
-                        <img src="img/UML-sequence-2.png"
-                            alt="autre exemple de diagramme de séquence UML" />
+                        <img src="img/UML-sequence-2.png" alt="autre exemple de diagramme de séquence UML" />
                     </div>
-                    </article>
+                </article>
+
+                <article class="article" id="diagramme-de-temps-UML">
+                    <p class="subtitle">Diagramme de Temps UML</p>
+                    <p>UML Diagrammes de Temps sont utilisés pour afficher le changement de state ou de la valeur d’un ou plusieurs éléments au fil du temps. Il peut également montrer l’interaction entre les événements prévus et le temps et les contraintes de durée, qui les dirigent.</p>
+                    <p>Un State de Ligne de Vie montre le changement du state d’un article au fil du temps. Les affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités est choisi, tandis que l’Axe des ordonnées est étiqueté d’une liste donnée du states.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-1.png" alt="exemple de diagramme de temps UML" />
+                    </div>
+                    <p>Un Ligne de Vie de Valeur montre le changement de valeur d’un article au fil du temps. Les affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités sont choisis, le même quant à le State de Ligne de Vie. On montre la valeur entre la paire des lignes horizontales qui traversent à chaque changement de la valeur.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-2.png" alt="autre exemple de diagramme de temps UML" />
+                    </div>
+                    <p>State and value State et Lignes de Vie peuvent être empilés les uns sur les autres dans une combinaison quelconque. Ils doivent avoir le même axe-X. Les messages peuvent être transmis d’une Ligne de Vie à l’autre. Chaque transition du state ou de la valeur peut avoir un événement défini, une contrainte de temps qui indique quand un événement doit se produire, et une contrainte de durée qui indique combien de temps un state ou la valeur doit être en vigueur pour. Une fois celles-ci ont toutes été appliquées, un diagramme de temps peut ressembler le suivant.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-3.png" alt="autre exemple de diagramme de temps UML" />
+                    </div>
+                </article>
             </section>
         </div>
 
