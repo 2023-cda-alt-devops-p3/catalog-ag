@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Doc-UML-MERISE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Work+Sans:wght@100&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main class="main">
 
-        <header class="header">
-            <h1 class="title">Documentation UML MERISE</h1>
+        <header class="header" id="HautDePage">
+            <h1 class="title">Documentation UML & MERISE</h1>
         </header>
 
         <div class="page">
             <nav class="nav">
 
-                <h2>Navigation</h2>
-
-                <p>Diagrammes UML de structure</p>
-                <ol>
+                <p class="navTitle">Diagrammes UML de structure</p>
+                <ol class="navList">
                     <li><a href="#diagramme-de-classes-UML">Diagrammes de classes</a></li>
                     <li><a href="#diagramme-d-objets-UML">Diagrammes d'Objets</a></li>
                     <li><a href="#diagramme-de-composants-UML">Diagrammes de Composants</a></li>
-                    <li><a>Diagrammes de Structure Composites</a></li>
+                    <li><a href="#diagramme-de-structures-composites-UML">Diagrammes de Structure Composites</a></li>
                     <li><a>Diagrammes de Déploiement</a></li>
                     <li><a>Diagrammes de Paquetage</a></li>
                     <li><a>Diagrammes de profil</a></li>
                 </ol>
 
-                <p>Diagrammes UML de comportement</p>
-                <ol>
+                <p class="navTitle">Diagrammes UML de comportement</p>
+                <ol class="navList">
                     <li><a>Diagrammes de Cas d'Utilisation</a></li>
                     <li><a>Diagrammes d'Activité</a></li>
                     <li><a>Diagrammes des états-transitions</a></li>
@@ -42,8 +44,8 @@
                     <li><a>Diagrammes de Vue d'Ensemble d'Interaction</a></li>
                 </ol>
 
-                <p>Diagrammes MERISE</p>
-                <ol>
+                <p class="navTitle">Diagrammes MERISE</p>
+                <ol class="navList">
                     <li><a>MCD modèle conceptuel des données</a></li>
                     <li><a>MCT modèle conceptuel des traitements</a></li>
                     <li><a>MLD modèle logique des données</a></li>
@@ -58,8 +60,10 @@
 
             <section class="section">
 
+                <h3 class="titleNavigation">Diagrammes de structures</h3>
+
                 <article class="article" id="diagramme-de-classes-UML">
-                    <p>Diagramme de classe UML</p>
+                    <p class="subtitle">Diagramme de classes UML</p>
                     <p>Les diagrammes de classes sont l'un des types de diagrammes UML les plus utiles, car ils
                         décrivent clairement la structure d'un système particulier en modélisant ses classes, ses
                         attributs, ses opérations et les relations entre ses objets.</p>
@@ -134,7 +138,7 @@
                 </article>
 
                 <article class="article" id="diagramme-d-objets-UML">
-                    <p>Diagramme d'objets UML</p>
+                    <p class="subtitle">Diagramme d'objets UML</p>
                     <p>Un diagramme d'objets UML représente une instance spécifique d'un diagramme de classes à un
                         moment précis. Dans sa représentation visuelle, il est très similaire à un diagramme de classes.
                     </p>
@@ -167,7 +171,7 @@
                 </article>
 
                 <article class="article" id="diagramme-de-composants-UML">
-                    <p>Diagramme de composants UML</p>
+                    <p class="subtitle">Diagramme de composants UML</p>
                     <p>Un diagramme de composants a pour objectif d'illustrer la relation entre les différents
                         composants d'un système. Dans le cadre de l'UML 2.0, le terme « composant » fait référence à un
                         module de classes qui représentent des systèmes ou des sous-systèmes indépendants ayant la
@@ -203,25 +207,162 @@
                         et complexes. Quels que soient vos besoins, vous devrez vous familiariser avec les symboles UML
                         appropriés. Voici les différents types de formes qu'il vous faut connaître lorsque vous
                         consultez ou souhaitez réaliser des diagrammes de composants :</p>
-                        <ol>
-                            <li>Symbole de composant : Entité tenue d'exécuter une fonction stéréotypée. Un composant fournit et consomme un comportement par le biais d'interfaces, ainsi que par le biais d'autres composants. Considérez les composants comme un type de classe. En UML 1.0, un composant est modélisé sous forme de bloc rectangulaire avec deux rectangles plus petits qui dépassent sur le côté. En UML 2.0, un composant est modélisé sous forme de bloc rectangulaire avec une petite image de l'ancienne forme UML 1.0.</li>
-                            <li>Symbole de nœud : Représente des objets matériels ou logiciels situés à un niveau supérieur aux composants.</li>
-                            <li>Symbole d'interface : Indique les entrées ou les données qu'un composant reçoit ou fournit. Les interfaces peuvent être représentées par des notes textuelles ou des symboles, tels que des formes de sucette, de douille ouverte et d'articulation.</li>
-                            <li>Symbole de port : Spécifie un point d'interaction distinct entre un composant et son environnement. Les ports sont symbolisés par un petit carré.</li>
-                            <li>Symbole de paquetage : Regroupe plusieurs éléments du système et est représenté par des dossiers de fichiers dans Lucidchart. Tout comme les dossiers de fichiers regroupent plusieurs feuilles, les packages peuvent englober plusieurs éléments.</li>
-                            <li>Remarque : Permet aux développeurs d'ajouter une méta-analyse sur le diagramme de composants.</li>
-                            <li>Symbole de dépendance : Indique les relations de dépendance entre les différentes parties de votre système. Les dépendances sont représentées par des lignes pointillées reliant un composant (ou élément) à un autre.</li>
-                        </ol>
-                        <div class="img-article">
-                            <img src="img/UML-Composants-1.png" alt="exemple de diagramme de composants UML" />
-                        </div>
-                        <div class="img-article">
-                            <img src="img/UML-Composants-2.png" alt="autre exemple de diagramme de composants UML" />
-                        </div>
-                    </article>
+                    <ol>
+                        <li>Symbole de composant : Entité tenue d'exécuter une fonction stéréotypée. Un composant
+                            fournit et consomme un comportement par le biais d'interfaces, ainsi que par le biais
+                            d'autres composants. Considérez les composants comme un type de classe. En UML 1.0, un
+                            composant est modélisé sous forme de bloc rectangulaire avec deux rectangles plus petits qui
+                            dépassent sur le côté. En UML 2.0, un composant est modélisé sous forme de bloc
+                            rectangulaire avec une petite image de l'ancienne forme UML 1.0.</li>
+                        <li>Symbole de nœud : Représente des objets matériels ou logiciels situés à un niveau supérieur
+                            aux composants.</li>
+                        <li>Symbole d'interface : Indique les entrées ou les données qu'un composant reçoit ou fournit.
+                            Les interfaces peuvent être représentées par des notes textuelles ou des symboles, tels que
+                            des formes de sucette, de douille ouverte et d'articulation.</li>
+                        <li>Symbole de port : Spécifie un point d'interaction distinct entre un composant et son
+                            environnement. Les ports sont symbolisés par un petit carré.</li>
+                        <li>Symbole de paquetage : Regroupe plusieurs éléments du système et est représenté par des
+                            dossiers de fichiers dans Lucidchart. Tout comme les dossiers de fichiers regroupent
+                            plusieurs feuilles, les packages peuvent englober plusieurs éléments.</li>
+                        <li>Remarque : Permet aux développeurs d'ajouter une méta-analyse sur le diagramme de
+                            composants.</li>
+                        <li>Symbole de dépendance : Indique les relations de dépendance entre les différentes parties de
+                            votre système. Les dépendances sont représentées par des lignes pointillées reliant un
+                            composant (ou élément) à un autre.</li>
+                    </ol>
+                    <div class="img-article">
+                        <img src="img/UML-Composants-1.png" alt="exemple de diagramme de composants UML" />
+                    </div>
+                    <div class="img-article">
+                        <img src="img/UML-Composants-2.png" alt="autre exemple de diagramme de composants UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-de-structures-composites-UML">
+                    <p class="subtitle">Diagramme de structures composites UML</p>
+                    <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une vue
+                        d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel. Il permet de visualiser
+                        un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
+                        packages et les liens qui les unissent dans le détail.</p>
+                    <div class="img-article">
+                        <img src="img/UML-Composite-1.png" alt="exemple de diagramme de structures composites UML" />
+                    </div>
+                    <p>Un diagramme de structure composite permet aux utilisateurs de déterminer précisément ce qui est
+                        contenu dans un objet, en spécifiant la manière dont différentes propriétés interagissent pour
+                        produire un certain comportement. Les différentes relations au sein d'un système logiciel
+                        complexe peuvent être difficiles à appréhender, mais la décomposition des fonctionnalités peut
+                        fournir des informations précieuses sur la manière dont les structures sont interconnectées,
+                        dont les informations sont communiquées, etc.</p>
+                    <p>Un diagramme de structure composite offre également les avantages suivants :</p>
+                    <p>Bien que les diagrammes des composants puissent paraître complexes à première vue, ils sont d'une
+                        valeur inestimable pour la conception de votre système. Ils peuvent en effet aider votre équipe
+                        à :</p>
+                    <ol>
+                        <li>Il aide les utilisateurs à comprendre l'état actuel de leur système.</li>
+                        <li>Il décompose la structure interne de plusieurs classes, interfaces ou composants, et leurs
+                            interactions.</li>
+                        <li>Il détaille les architectures d'exécution et les modèles d'utilisation que les diagrammes
+                            statiques ne peuvent pas représenter.</li>
+                        <li>Il fournit aux utilisateurs des informations pour optimiser et dépanner leur système.
+                        </li>
+                    </ol>
+                    <p>Composants de base des diagrammes de structures composites UML</p>
+                    <ol>
+                        <li>Terminator : Indique les points de départ et de fin</li>
+                        <li>Nœud (circulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                        <li>Nœud (rectangulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                        <li>Acteur : Interagit avec le système depuis l'extérieur (p. ex. une personne, un équipement,
+                            etc.)</li>
+                        <li>Classe : Regroupe les objets ayant des propriétés ou des comportements communs (p. ex. des
+                            opérations, des paramètres, des attributs, etc.)</li>
+                        <li>Partie : Agit comme une instance d'exécution des classes ou des interfaces</li>
+                        <li>Port : Définit le comportement que l'exécutant accepte de respecter</li>
+                        <li>Raccord : Représente les liens de communication entre les parties</li>
+                    </ol>
+                    <p>En tant que diagrammes UML, les diagrammes de structure composite et les diagrammes de classes
+                        sont utilisés pour visualiser et organiser les acteurs, les interactions et les artefacts au
+                        sein d'un système. Mais si les diagrammes de structure composite et les diagrammes de classes
+                        ont des significations similaires, ils diffèrent au final dans la façon dont ils représentent
+                        ces informations. Pour faire simple, les diagrammes de structure composite sont plus spécifiques
+                        et moins ambigus que les diagrammes de classes.</p>
+                    <p>Un diagramme de structure composite permet aux utilisateurs de modéliser plus clairement les
+                        implémentations de l'activité d'un artefact dans un environnement d'exécution. Ils sont
+                        également plus efficaces pour illustrer la décomposition en contexte, en décrivant la structure
+                        interne de plusieurs classes et les liens qui existent entre elles. En résumé, si vous souhaitez
+                        transmettre des informations concrètes et explicites sur les comportements et les associations
+                        au sein de votre système, optez pour un diagramme de structure composite.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-Composite-2.png"
+                            alt="autre exemple de diagramme de structures composites UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-de-deploiement-UML">
+                    <p class="subtitle">Diagramme de structures composites UML</p>
+                    <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une vue
+                        d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel. Il permet de visualiser
+                        un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
+                        packages et les liens qui les unissent dans le détail.</p>
+                    <div class="img-article">
+                        <img src="img/UML-Composite-1.png" alt="exemple de diagramme de structures composites UML" />
+                    </div>
+                    <p>Un diagramme de structure composite permet aux utilisateurs de déterminer précisément ce qui est
+                        contenu dans un objet, en spécifiant la manière dont différentes propriétés interagissent pour
+                        produire un certain comportement. Les différentes relations au sein d'un système logiciel
+                        complexe peuvent être difficiles à appréhender, mais la décomposition des fonctionnalités peut
+                        fournir des informations précieuses sur la manière dont les structures sont interconnectées,
+                        dont les informations sont communiquées, etc.</p>
+                    <p>Un diagramme de structure composite offre également les avantages suivants :</p>
+                    <p>Bien que les diagrammes des composants puissent paraître complexes à première vue, ils sont d'une
+                        valeur inestimable pour la conception de votre système. Ils peuvent en effet aider votre équipe
+                        à :</p>
+                    <ol>
+                        <li>Il aide les utilisateurs à comprendre l'état actuel de leur système.</li>
+                        <li>Il décompose la structure interne de plusieurs classes, interfaces ou composants, et leurs
+                            interactions.</li>
+                        <li>Il détaille les architectures d'exécution et les modèles d'utilisation que les diagrammes
+                            statiques ne peuvent pas représenter.</li>
+                        <li>Il fournit aux utilisateurs des informations pour optimiser et dépanner leur système.
+                        </li>
+                    </ol>
+                    <p>Composants de base des diagrammes de structures composites UML</p>
+                    <ol>
+                        <li>Terminator : Indique les points de départ et de fin</li>
+                        <li>Nœud (circulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                        <li>Nœud (rectangulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                        <li>Acteur : Interagit avec le système depuis l'extérieur (p. ex. une personne, un équipement,
+                            etc.)</li>
+                        <li>Classe : Regroupe les objets ayant des propriétés ou des comportements communs (p. ex. des
+                            opérations, des paramètres, des attributs, etc.)</li>
+                        <li>Partie : Agit comme une instance d'exécution des classes ou des interfaces</li>
+                        <li>Port : Définit le comportement que l'exécutant accepte de respecter</li>
+                        <li>Raccord : Représente les liens de communication entre les parties</li>
+                    </ol>
+                    <p>En tant que diagrammes UML, les diagrammes de structure composite et les diagrammes de classes
+                        sont utilisés pour visualiser et organiser les acteurs, les interactions et les artefacts au
+                        sein d'un système. Mais si les diagrammes de structure composite et les diagrammes de classes
+                        ont des significations similaires, ils diffèrent au final dans la façon dont ils représentent
+                        ces informations. Pour faire simple, les diagrammes de structure composite sont plus spécifiques
+                        et moins ambigus que les diagrammes de classes.</p>
+                    <p>Un diagramme de structure composite permet aux utilisateurs de modéliser plus clairement les
+                        implémentations de l'activité d'un artefact dans un environnement d'exécution. Ils sont
+                        également plus efficaces pour illustrer la décomposition en contexte, en décrivant la structure
+                        interne de plusieurs classes et les liens qui existent entre elles. En résumé, si vous souhaitez
+                        transmettre des informations concrètes et explicites sur les comportements et les associations
+                        au sein de votre système, optez pour un diagramme de structure composite.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-Composite-2.png"
+                            alt="autre exemple de diagramme de structures composites UML" />
+                    </div>
+                </article>
 
             </section>
         </div>
+
+        <footer><div class="footer"><a href="#HautDePage">Revenir au menu</a></div></footer>
+
     </main>
 </body>
 
