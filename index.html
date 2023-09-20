@@ -37,11 +37,11 @@
                 <ol class="navList">
                     <li><a href="#diagramme-de-cas-d-utilisation-UML">Diagrammes de Cas d'Utilisation</a></li>
                     <li><a href="#diagramme-activite-UML">Diagrammes d'Activité</a></li>
-                    <li><a href="#diagramme-etats-transitions-UML">Diagrammes des états-transitions</a></li>
+                    <li><a href="#diagramme-etats-transitions-UML">Diagrammes des Etats-Transitions</a></li>
                     <li><a href="#diagramme-de-communication-UML">Diagrammes de Communication</a></li>
                     <li><a href="#diagramme-de-sequence-UML">Diagrammes de Séquence</a></li>
                     <li><a href="#diagramme-de-temps-UML">Diagrammes de Temps</a></li>
-                    <li><a>Diagrammes de Vue d'Ensemble d'Interaction</a></li>
+                    <li><a href="#diagramme-d-aperçu-d-interaction-UML">Diagrammes d'Aperçu d'Interaction</a></li>
                 </ol>
 
                 <p class="navTitle">Diagrammes MERISE</p>
@@ -663,18 +663,63 @@
 
                 <article class="article" id="diagramme-de-temps-UML">
                     <p class="subtitle">Diagramme de Temps UML</p>
-                    <p>UML Diagrammes de Temps sont utilisés pour afficher le changement de state ou de la valeur d’un ou plusieurs éléments au fil du temps. Il peut également montrer l’interaction entre les événements prévus et le temps et les contraintes de durée, qui les dirigent.</p>
-                    <p>Un State de Ligne de Vie montre le changement du state d’un article au fil du temps. Les affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités est choisi, tandis que l’Axe des ordonnées est étiqueté d’une liste donnée du states.</p>
+                    <p>UML Diagrammes de Temps sont utilisés pour afficher le changement de state ou de la valeur d’un
+                        ou plusieurs éléments au fil du temps. Il peut également montrer l’interaction entre les
+                        événements prévus et le temps et les contraintes de durée, qui les dirigent.</p>
+                    <p>Un State de Ligne de Vie montre le changement du state d’un article au fil du temps. Les
+                        affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités est choisi, tandis
+                        que l’Axe des ordonnées est étiqueté d’une liste donnée du states.</p>
                     <div class="img-article">
                         <img src="img/UML-temps-1.png" alt="exemple de diagramme de temps UML" />
                     </div>
-                    <p>Un Ligne de Vie de Valeur montre le changement de valeur d’un article au fil du temps. Les affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités sont choisis, le même quant à le State de Ligne de Vie. On montre la valeur entre la paire des lignes horizontales qui traversent à chaque changement de la valeur.</p>
+                    <p>Un Ligne de Vie de Valeur montre le changement de valeur d’un article au fil du temps. Les
+                        affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités sont choisis, le
+                        même quant à le State de Ligne de Vie. On montre la valeur entre la paire des lignes
+                        horizontales qui traversent à chaque changement de la valeur.</p>
                     <div class="img-article">
                         <img src="img/UML-temps-2.png" alt="autre exemple de diagramme de temps UML" />
                     </div>
-                    <p>State and value State et Lignes de Vie peuvent être empilés les uns sur les autres dans une combinaison quelconque. Ils doivent avoir le même axe-X. Les messages peuvent être transmis d’une Ligne de Vie à l’autre. Chaque transition du state ou de la valeur peut avoir un événement défini, une contrainte de temps qui indique quand un événement doit se produire, et une contrainte de durée qui indique combien de temps un state ou la valeur doit être en vigueur pour. Une fois celles-ci ont toutes été appliquées, un diagramme de temps peut ressembler le suivant.</p>
+                    <p>State and value State et Lignes de Vie peuvent être empilés les uns sur les autres dans une
+                        combinaison quelconque. Ils doivent avoir le même axe-X. Les messages peuvent être transmis
+                        d’une Ligne de Vie à l’autre. Chaque transition du state ou de la valeur peut avoir un événement
+                        défini, une contrainte de temps qui indique quand un événement doit se produire, et une
+                        contrainte de durée qui indique combien de temps un state ou la valeur doit être en vigueur
+                        pour. Une fois celles-ci ont toutes été appliquées, un diagramme de temps peut ressembler le
+                        suivant.</p>
                     <div class="img-article">
                         <img src="img/UML-temps-3.png" alt="autre exemple de diagramme de temps UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-d-aperçu-d-interaction-UML">
+                    <p class="subtitle">Diagramme d'aperçu d'interaction UML</p>
+                    <p>Un diagramme d'aperçu d'interaction est une forme d'un diagramme d'activité. Dans lequel les
+                        noeuds représentent des diagrammes d'interaction. Diagrammes d'interaction peuvent inclure la
+                        séquence, la communication, l'interaction et la liste de chronogrammes. La plupart de la
+                        notation pour des diagrammes de vue d'ensemble d'interaction est la même pour des diagrammes
+                        d'activité. Par exemple, initiale, finale, décision, fusionner, fourchette et rejoindre nouds
+                        sont tous les mêmes. Cependant, aperçu interaction diagrammes introduisent deux nouveaux
+                        éléments: occurrences d'interaction et des éléments d'interaction.</p>
+                    <p>Les occurrences d'interaction sont des références aux diagrammes d'interaction existants. Une
+                        occurrence d'interaction est indiquée par un cadre de référence; qui est, un cadre avec "ref"
+                        dans le coin supérieur gauche. Le nom du diagramme, référencé, est affiché au centre du champ.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-apercu-interaction-1.png" alt="exemple de diagramme d'aperçu d'interaction UML" />
+                    </div>
+                    <p>Éléments d'interaction sont semblables aux occurrences d'interaction. Donc, ils affichent une
+                        représentation de diagrammes d'interaction existants dans un cadre rectangulaire. Ils sont
+                        différents en ce qu'ils affichent le contenu de la ligne des références du diagramme.</p>
+                        <div class="img-article">
+                            <img src="img/UML-apercu-interaction-2.png" alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                        </div>
+                        <p>Tous les mêmes contrôles de diagrammes d'activité (fourche, joindre, fusionner, etc.) peut être
+                        utilisé sur des diagrammes de vue d'ensemble d'interaction pour mettre la logique de contrôle
+                        l'encerclement des diagrammes de niveau inférieurs. L'exemple suivant illustre un processus de
+                        vente de l'échantillon, avec des sous-processus abstraits dans les occurrences d'interaction.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-apercu-interaction-3.png" alt="autre exemple de diagramme d'aperçu d'interaction UML" />
                     </div>
                 </article>
             </section>
