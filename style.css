@@ -1,26 +1,87 @@
 * {
-    background-color: whitesmoke;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title {
     text-align: center;
     color: green;
     font-size: xx-large;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: x-large;
+    color: green;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.titleNavigation {
+    font-size: xx-large;
+    color: green;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.navTitle {
+    font-size: x-large;
+    color: green;
+    font-weight: 700;
+    font-style: oblique;
 }
 
 .nav {
     border: 4px solid green;
-    max-width: max-content;
+    border-radius: 20px;
+    min-width: fit-content;
+    height: fit-content;
+}
+
+.navList {
+    list-style-type: none;
+    padding: 0px 0px;
+}
+
+.navList a {
+    text-decoration: none;
 }
 
 .page {
     display: flex;
     flex-direction: row;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .section {
     border: 4px solid green;
+    border-radius: 20px;
     margin-left: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: larger;
+    padding: 5px 10px;
+    border-radius: 20px;
+
 }
 
 .article {
@@ -29,22 +90,27 @@
 
 a:hover {
     cursor: pointer;
+    color: green;
 }
 
 li {
-    margin: 10px 5px 10px 0px;
+    margin: 10px 5px;
 }
 
 
 h2 {
     font-size: x-large;
-    margin-left: 5px;
+    margin: 10px 5px;
     font-weight: 700;
+}
+
+h3 {
+    margin: 10px 10px;
 }
 
 p {
     font-size: larger;
-    margin-left: 5px;
+    margin: 5px 5px;
     font-weight: 400;
 }
 
@@ -64,3 +130,19 @@ img {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 1080px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    .section {
+        margin-top: 10px;
+        border-radius: 20px;
+        margin-left: 0px;
+    }
+  }
+
