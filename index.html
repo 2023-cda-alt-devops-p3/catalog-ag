@@ -37,23 +37,21 @@
                 <ol class="navList">
                     <li><a href="#diagramme-de-cas-d-utilisation-UML">Diagrammes de Cas d'Utilisation</a></li>
                     <li><a href="#diagramme-activite-UML">Diagrammes d'Activité</a></li>
-                    <li><a href="#diagramme-etats-transitions-UML">Diagrammes des états-transitions</a></li>
-                    <li><a>Diagrammes de Communication</a></li>
-                    <li><a>Diagrammes de Séquence</a></li>
-                    <li><a>Diagrammes de Temps</a></li>
-                    <li><a>Diagrammes de Vue d'Ensemble d'Interaction</a></li>
+                    <li><a href="#diagramme-etats-transitions-UML">Diagrammes des Etats-Transitions</a></li>
+                    <li><a href="#diagramme-de-communication-UML">Diagrammes de Communication</a></li>
+                    <li><a href="#diagramme-de-sequence-UML">Diagrammes de Séquence</a></li>
+                    <li><a href="#diagramme-de-temps-UML">Diagrammes de Temps</a></li>
+                    <li><a href="#diagramme-d-aperçu-d-interaction-UML">Diagrammes d'Aperçu d'Interaction</a></li>
                 </ol>
 
                 <p class="navTitle">Diagrammes MERISE</p>
                 <ol class="navList">
-                    <li><a>MCD modèle conceptuel des données</a></li>
-                    <li><a>MCT modèle conceptuel des traitements</a></li>
-                    <li><a>MLD modèle logique des données</a></li>
-                    <li><a>MPD modèle physique des données</a></li>
-                    <li><a>DFD modèle de flux de données</a></li>
-                    <li><a>PFD modèle de flux de processus</a></li>
-                    <li><a>EFD modèle de flux externe</a></li>
-                    <li><a>EA modèle entité-association</a></li>
+                    <li><a href="#modele-conceptuel-des-donnees-MERISE">MCD modèle conceptuel des données</a></li>
+                    <li><a href="#modele-physique-des-donnees-MERISE">MPD modèle physique des données</a></li>
+                    <li><a href="#modele-logique-des-donnees-MERISE">MLD modèle logique des données</a></li>
+                    <li><a href="#modele-flux-des-donnees-MERISE">MFD modèle de flux de données</a></li>
+                    <li><a href="#modele-conceptuel-des-traitements-MERISE">MCT modèle conceptuel des traitements</a>
+                    </li>
                 </ol>
 
             </nav>
@@ -544,6 +542,7 @@
                         <img src="img/UML-activite-2.png" alt="autre exemple de diagramme d'activité UML" />
                     </div>
                 </article>
+
                 <article class="article" id="diagramme-etats-transitions-UML">
                     <p class="subtitle">Diagramme d'états-transitions UML</p>
                     <p>Un diagramme d'états-transitions est un type de diagramme comportemental en langage de
@@ -578,7 +577,251 @@
                         <img src="img/UML-etats-transitions-1.png" alt="exemple de diagramme d'états-transitions UML" />
                     </div>
                     <div class="img-article">
-                        <img src="img/UML-etats-transitions-2.png" alt="autre exemple de diagramme d'états-transitions UML" />
+                        <img src="img/UML-etats-transitions-2.png"
+                            alt="autre exemple de diagramme d'états-transitions UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-de-communication-UML">
+                    <p class="subtitle">Diagramme de communication UML</p>
+                    <p>En langage UML, un diagramme de communication représente les interactions entre les objets ou les
+                        rôles associés aux lignes de vie et les messages transmis entre les lignes de vie. Dans les
+                        versions précédentes d'UML, ce diagramme s'appelait diagramme de collaboration et avait une
+                        notation différente.</p>
+                    <p>Les diagrammes de communication sont des diagrammes d'interaction que vous pouvez utiliser pour
+                        explorer le comportement dynamique d'un système ou d'une application logicielle. Ils offrent une
+                        autre vue des informations des diagramme de séquence. Dans les diagrammes de séquence, l'accent
+                        est mis sur l'ordre des messages dans le temps alors que dans les diagrammes de communication
+                        l'accent est mis sur la structure des messages transmis entre les objets dans l'interaction. Ces
+                        diagrammes illustrent le flux de messages entre les objets et les relations que cela entraîne
+                        entre les classes.</p>
+                    <p>Les diagrammes de communication vous permettent d'explorer le fonctionnement des objets dans un
+                        système ou une application. Ils peuvent identifier les aspects suivants d'une interaction ou
+                        d'une tâche :</p>
+                    <ol>
+                        <li>Les objets qui participent à l'interaction</li>
+                        <li>Les interfaces que les classes participantes requièrent</li>
+                        <li>Les changements de structure requis par une interaction</li>
+                        <li>Les données transmises entre les objets dans une interaction</li>
+                    </ol>
+                    <p>Les diagrammes de communication ressemblent aux diagrammes d'objets dans lesquels une ligne de
+                        vie représente les objets de l'interaction et les flèches représentent les messages transmis
+                        entre les lignes de vie. Les pointes de flèches indiquent la direction des messages et les
+                        numéro de séquence indiquent l'ordre de transmission des messages.</p>
+                    <p>Les rubriques suivantes décrivent les éléments compris dans les diagrammes de communication :</p>
+                    <ol>
+                        <li>Dans les diagrammes UML tels que les diagrammes de séquence ou de communication, les lignes
+                            de vie représentent les objets entrant dans une interaction. Dans un scénario d'une banque,
+                            par exemple, les lignes de vie peuvent représenter des objets comme le système bancaire ou
+                            un client. Chaque instance d'une interaction est représentée par une ligne de vie.</li>
+                        <li>ans les diagrammes de communication, le chemin d'un message est un connecteur entre les
+                            rôles ou objets représentés par les ligne de vie dans le diagramme. Le chemin identifie les
+                            objets qui peuvent transmettre des messages dans l'interaction.</li>
+                        <li>Un message est un élément de diagramme Unified Modeling Language (UML) qui définit un type
+                            particulier de communication entre les instances au cours d'une interaction. Un message fait
+                            circuler des informations d'une instance, représentée par une ligne de vie, à une autre
+                            instance au cours d'une interaction.</li>
+                    </ol>
+                </article>
+
+                <article class="article" id="diagramme-de-sequence-UML">
+                    <p class="subtitle">Diagramme de sequence UML</p>
+                    <p>Les diagrammes de séquence sont une solution populaire de modélisation dynamique en langage UML,
+                        car ils se concentrent plus précisément sur les lignes de vie, les processus et les objets qui
+                        vivent simultanément, et les messages qu'ils échangent entre eux pour exercer une fonction avant
+                        la fin de la ligne de vie.</p>
+                    <p>Les diagrammes de séquence peuvent constituer des références utiles pour les entreprises et
+                        d'autres organisations. Essayez de dessiner un diagramme de séquence pour :</p>
+                    <ol>
+                        <li>Représenter les détails d'un cas d'utilisation UML</li>
+                        <li>Modéliser le déroulement logique d'une procédure, fonction ou opération complexe</li>
+                        <li>Voir comment les objets et les composants interagissent entre eux pour effectuer un
+                            processus.</li>
+                        <li>Schématiser et comprendre le fonctionnement détaillé d'un scénario existant ou à venir</li>
+                    </ol>
+                    <p>Les scénarios suivants sont idéaux pour utiliser un diagramme de séquence :</p>
+                    <ol>
+                        <li>Scénario d'utilisation : un scénario d'utilisation est un diagramme décrivant comment votre
+                            système pourrait potentiellement être utilisé. C'est un bon moyen de s'assurer que vous avez
+                            pris en compte la logique de tous les scénarios d'utilisation du système.</li>
+                        <li>Logique de méthode : de la même façon que vous pouvez utiliser un diagramme de séquence UML
+                            pour analyser la logique d'un cas d'utilisation, vous pouvez aussi vous en servir pour
+                            analyser la logique d'une fonction, d'une procédure ou d'un processus complexe.</li>
+                        <li>Logique de service : si vous considérez un service comme étant une méthode générale utilisée
+                            par différents clients, un diagramme de séquence est le moyen idéal de le schématiser.
+                        </li>
+                    </ol>
+                    <div class="img-article">
+                        <img src="img/UML-sequence-1.png" alt="exemple de diagramme de séquence UML" />
+                    </div>
+                    <div class="img-article">
+                        <img src="img/UML-sequence-2.png" alt="autre exemple de diagramme de séquence UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-de-temps-UML">
+                    <p class="subtitle">Diagramme de Temps UML</p>
+                    <p>UML Diagrammes de Temps sont utilisés pour afficher le changement de state ou de la valeur d’un
+                        ou plusieurs éléments au fil du temps. Il peut également montrer l’interaction entre les
+                        événements prévus et le temps et les contraintes de durée, qui les dirigent.</p>
+                    <p>Un State de Ligne de Vie montre le changement du state d’un article au fil du temps. Les
+                        affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités est choisi, tandis
+                        que l’Axe des ordonnées est étiqueté d’une liste donnée du states.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-1.png" alt="exemple de diagramme de temps UML" />
+                    </div>
+                    <p>Un Ligne de Vie de Valeur montre le changement de valeur d’un article au fil du temps. Les
+                        affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités sont choisis, le
+                        même quant à le State de Ligne de Vie. On montre la valeur entre la paire des lignes
+                        horizontales qui traversent à chaque changement de la valeur.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-2.png" alt="autre exemple de diagramme de temps UML" />
+                    </div>
+                    <p>State and value State et Lignes de Vie peuvent être empilés les uns sur les autres dans une
+                        combinaison quelconque. Ils doivent avoir le même axe-X. Les messages peuvent être transmis
+                        d’une Ligne de Vie à l’autre. Chaque transition du state ou de la valeur peut avoir un événement
+                        défini, une contrainte de temps qui indique quand un événement doit se produire, et une
+                        contrainte de durée qui indique combien de temps un state ou la valeur doit être en vigueur
+                        pour. Une fois celles-ci ont toutes été appliquées, un diagramme de temps peut ressembler le
+                        suivant.</p>
+                    <div class="img-article">
+                        <img src="img/UML-temps-3.png" alt="autre exemple de diagramme de temps UML" />
+                    </div>
+                </article>
+
+                <article class="article" id="diagramme-d-aperçu-d-interaction-UML">
+                    <p class="subtitle">Diagramme d'aperçu d'interaction UML</p>
+                    <p>Un diagramme d'aperçu d'interaction est une forme d'un diagramme d'activité. Dans lequel les
+                        noeuds représentent des diagrammes d'interaction. Diagrammes d'interaction peuvent inclure la
+                        séquence, la communication, l'interaction et la liste de chronogrammes. La plupart de la
+                        notation pour des diagrammes de vue d'ensemble d'interaction est la même pour des diagrammes
+                        d'activité. Par exemple, initiale, finale, décision, fusionner, fourchette et rejoindre nouds
+                        sont tous les mêmes. Cependant, aperçu interaction diagrammes introduisent deux nouveaux
+                        éléments: occurrences d'interaction et des éléments d'interaction.</p>
+                    <p>Les occurrences d'interaction sont des références aux diagrammes d'interaction existants. Une
+                        occurrence d'interaction est indiquée par un cadre de référence; qui est, un cadre avec "ref"
+                        dans le coin supérieur gauche. Le nom du diagramme, référencé, est affiché au centre du champ.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-apercu-interaction-1.png"
+                            alt="exemple de diagramme d'aperçu d'interaction UML" />
+                    </div>
+                    <p>Éléments d'interaction sont semblables aux occurrences d'interaction. Donc, ils affichent une
+                        représentation de diagrammes d'interaction existants dans un cadre rectangulaire. Ils sont
+                        différents en ce qu'ils affichent le contenu de la ligne des références du diagramme.</p>
+                    <div class="img-article">
+                        <img src="img/UML-apercu-interaction-2.png"
+                            alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                    </div>
+                    <p>Tous les mêmes contrôles de diagrammes d'activité (fourche, joindre, fusionner, etc.) peut être
+                        utilisé sur des diagrammes de vue d'ensemble d'interaction pour mettre la logique de contrôle
+                        l'encerclement des diagrammes de niveau inférieurs. L'exemple suivant illustre un processus de
+                        vente de l'échantillon, avec des sous-processus abstraits dans les occurrences d'interaction.
+                    </p>
+                    <div class="img-article">
+                        <img src="img/UML-apercu-interaction-3.png"
+                            alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                    </div>
+                </article>
+
+                <h3 class="titleNavigation">Modèles MERISE</h3>
+
+                <article class="article" id="modele-conceptuel-des-donnees-MERISE">
+                    <p class="subtitle">Modèle Conceptuel des Données MERISE</p>
+                    <p>Le MCD permet de représenter le système d'information indépendamment de son aspect informatique,
+                        il doit être compréhensible par tous: informaticiens, employés, secrétaires, personnel de
+                        direction, etc.</p>
+                    <p>Pour ce faire la méthode Merise utilise 2 représentations:</p>
+                    <ol>
+                        <li>l'entité: elle regroupe l'information statique et durable.
+                            Par exemple, l'entité employe rassemble toutes les informations communes aux employés d'une
+                            entreprise. Une entité est représentée par un nom commun écrit en majuscules et au
+                            singulier. Exemples: EMPLOYE, DIPLOME, COMMUNE, FOURNISSEUR, etc.</li>
+                        <li>l'association: elle matérialise la dynamique du système et donc les relations entre les
+                            entités. Par exemple, l'entité employe est en relation avec l'entité service de
+                            l'entreprise. L'association (ou relation) est représentée par un verbe d'action ou d'éta à
+                            l'infinitif. Exemples: HABITER, LOUER, JOUER, CARACTERISER, etc.</li>
+                    </ol>
+                    <p>Une entité regroupe des informations de même nature, ces informations sont représentées par les
+                        attributs de l'entité.</p>
+                    <p>Une association (ou une relation) est un lien entre plusieurs entités.</p>
+                    <p>L'association représente la dynamique du système, elle exprime l'activité du système
+                        d'information, elle est caractérisée par les cardinalités.</p>
+                    <p>La cardinalité d'une patte reliant une association et une entité précise le nombre de fois
+                        minimal et maximal d'interventions d'une occurence de l'entité avec l'association. La
+                        cardinalité minimale doit être inférieure ou égale à la cardinalité maximale.</p>
+                    <p>Les seuls cardinalités admises sont donc :</p>
+                    <ol>
+                        <li>1-1: une occurrence de l'entité participe minimum et maximum 1 fois à l'association</li>
+                        <li>0-1: une occurrence de l'entité peut exister sans pour autant participer à la relation et ne
+                            participe jamais plus d'une fois</li>
+                        <li>1-n: une occurrence de l'entité participe au moins une fois à l'association et peut
+                            participer sans limitation</li>
+                        <li>0-n: une occurrence de l'entité peut exister sans pour autant participer à la relation et
+                            peut participer sans limitation</li>
+                    </ol>
+                    <div class="img-article">
+                        <img src="img/MERISE_MCD-1.png" alt="exemple de MCD" />
+                    </div>
+                </article>
+
+                <article class="article" id="modele-physique-des-donnees-MERISE">
+                    <p class="subtitle">Modèle Physique des Données MERISE</p>
+                    <p>Il s'agit de la représentation modélisée qui précède l'implémentation dans le SGBDR.</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MPD-1.png" alt="exemple de MPD" />
+                    </div>
+                </article>
+
+                <article class="article" id="modele-logique-des-donnees-MERISE">
+                    <p class="subtitle">Modèle Logique des Données MERISE</p>
+                    <p>Un modèle logique de données relationnel (MLD-R) est la représentation des données d'un système
+                        d'information réalisé en vue d'une mise en oeuvre au sein d'un système de gestion de base de
+                        données relationnel (SGBD-R). Les données sont représentées sous forme de tables et de relations
+                        entre tables.</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MLD-1.png" alt="exemple de MLD" />
+                    </div>
+                    <p>Les modèles logiques de données relationnels sont réalisés à partir du méta modèle de classes du
+                        langage de modélisation unifié, UML en abrégé. La lecture des cardinalités UML est l'inverse de
+                        la lecture Merise.</p>
+                </article>
+
+                <article class="article" id="modele-flux-des-donnees-MERISE">
+                    <p class="subtitle">Modèle de Flux des Données MERISE</p>
+                    <p>Les flux d'informations sont un échange d'informations (message) entre des acteurs (externes ou
+                        internes au système étudié) et le domaine étudié. On appelle Diagramme des flux, une
+                        modélisation qui représente uniquement ces flux échangés, sans chronologie et sans description
+                        des activités associées (en entrée ou sortie) à ces flux.</p>
+                    <p>On appelle Diagramme des flux, une modélisation qui représente uniquement les flux échangés, sans
+                        chronologie ni description des activités associées (en entrée ou sortie) à ces flux.
+                        On retrouvera évidemment ces mêmes flux dans un MCT (puis plus tard dans un MOT) mais cette
+                        fois-ci associés aux opérations qui composent le domaine étudié. Un flux (ou message) entrant
+                        dans le système déclenchera une opération; un flux sortant sera produit par une opération.
+                        Le diagramme des flux ci-dessous est dit "de contexte" car il montre globalement les principaux
+                        flux entre le domaine étudié (la branche Auto) et les acteurs de son environnement.</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MFD-1.png" alt="exemple de modèle de flux de données" />
+                    </div>
+                    <p>Le diagramme des flux suivant expose les principaux processus du domaine et les flux associés à
+                        ces processus. Un tel diagramme est une transition entre un diagramme des flux de contexte et un
+                        "macro-MCT".</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MFD-2.png" alt="exemple de modèle de flux de données" />
+                    </div>
+                </article>
+                <article class="article" id="modele-conceptuel-des-traitements-MERISE">
+                    <p class="subtitle">Modèle Conceptuel des Traitements MERISE</p>
+                    <p>Le diagramme ci-après est un MCT "classique" qui présente les deux opérations (les deux "temps"
+                        métiers) qui constituent le processus "Gestion des sinistres". Il existe des "règles" pour
+                        construire les opérations d'un MCT.</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MCT-1.png" alt="exemple de modèle conceptuel de traitements" />
+                    </div>
+                    <p>Ce dernier diagramme est un MCT analytique qui décompose en opérations élémentaires, l'opération
+                        initiale Ouverture du dossier.</p>
+                    <div class="img-article">
+                        <img src="img/MERISE_MCT-2.png" alt="autre exemple de modèle conceptuel de traitements" />
                     </div>
                 </article>
             </section>
